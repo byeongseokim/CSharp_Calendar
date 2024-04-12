@@ -1,21 +1,27 @@
 # CSharp_Calendar
 
 <P>📍메인 화면📍</P>
-<img src="https://private-user-images.githubusercontent.com/130538673/321845572-912acd82-b33f-4722-b0aa-271c11361728.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI4OTI4NDIsIm5iZiI6MTcxMjg5MjU0MiwicGF0aCI6Ii8xMzA1Mzg2NzMvMzIxODQ1NTcyLTkxMmFjZDgyLWIzM2YtNDcyMi1iMGFhLTI3MWMxMTM2MTcyOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxMlQwMzI5MDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMTUzZDgxMWY2M2Y4MzBhMzEwNWZhMTFlYTA5OGRjMDJhMzI1YjQ1YmNjYzFiYzBkMjhiOGE3ODEyYmFkNzUxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.X3ojh0qd_t_dc3r4wQYQzYmL-fZUhwvBZRqArI-58Y0" />
 
-<p>원하는 달을 입력 하면</p>
-<img src="https://private-user-images.githubusercontent.com/130538673/321846752-922e3a2f-6cb9-4683-ba7d-3ec944349f31.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI4OTMxMzgsIm5iZiI6MTcxMjg5MjgzOCwicGF0aCI6Ii8xMzA1Mzg2NzMvMzIxODQ2NzUyLTkyMmUzYTJmLTZjYjktNDY4My1iYTdkLTNlYzk0NDM0OWYzMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxMlQwMzMzNThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZmMxYzdjNTY0OWFmYjFjNGI1MzIzOWJkNzNjYzkwNmNkZjQ2YjI4NjcwMWViYTE2MWIzY2I4NjE5NGE4MWQwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.eU4R_fBobTM_ZmazAPHVc4bsCxsio0fsNp-iE-n3KkA" />
+![메인화면](https://github.com/byeongseokim/CSharp_Calendar/assets/130538673/7ecbb5b5-432a-4ff5-a837-c3a2a951522c)
 
-<p>다른 달을 보고 싶으면 Y / 아니라면 N</p>
-<img src="https://private-user-images.githubusercontent.com/130538673/321847265-c3777b16-68aa-4a9b-a42b-de95a90f447b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI4OTMyOTUsIm5iZiI6MTcxMjg5Mjk5NSwicGF0aCI6Ii8xMzA1Mzg2NzMvMzIxODQ3MjY1LWMzNzc3YjE2LTY4YWEtNGE5Yi1hNDJiLWRlOTVhOTBmNDQ3Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxMlQwMzM2MzVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04Y2ExMDVhNDA1ZjEyMTFlYjM5YTJjZjFiYjdmNTQ4OTc2N2VmZjJiZmQ5ZmRjNmM1NjNjOGQ5NTM3Yzk4YTU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.fpAps8JGljchIGVBM1e43F4HspFHNxEoDul3hRGtEIA" />
+
+<p>1️⃣ 원하는 달을 입력 하면</p>
+
+![image](https://github.com/byeongseokim/CSharp_Calendar/assets/130538673/922e3a2f-6cb9-4683-ba7d-3ec944349f31)
+
+<p>2️⃣ 다른 달을 보고 싶으면 Y / 아니라면 N</p>
+
+![Code](https://github.com/byeongseokim/CSharp_Calendar/assets/130538673/c3777b16-68aa-4a9b-a42b-de95a90f447b)
 
 이런식으로 처리 해서 소문자와 대문자 구분 없이 y,Y / n,N입력 가능 하게 해줌
 
-<p>Y를 눌렀다면 다시 물어본다.</p>
-<img src="https://private-user-images.githubusercontent.com/130538673/321846826-0a12edfb-9288-46da-a307-c45de20f8bd5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI4OTMzNTQsIm5iZiI6MTcxMjg5MzA1NCwicGF0aCI6Ii8xMzA1Mzg2NzMvMzIxODQ2ODI2LTBhMTJlZGZiLTkyODgtNDZkYS1hMzA3LWM0NWRlMjBmOGJkNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxMlQwMzM3MzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYTY1NmE3OThlNmFkNWMxNDAxMDdmZjJkZWU0NjY5N2JlY2QyNDllOTE1MDA4YjMyZDgzYzc1NDg3NWY3Mjk2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.wJsDPV_qeWiXOiKU_l2HDBSG0iEiXNbCGcjiW2lRWO0" />
+<p>3️⃣ Y를 눌렀다면 다시 물어본다.</p>
 
-<p>N 이다?</p>
-<img src="https://private-user-images.githubusercontent.com/130538673/321846862-af227b0e-98e3-4646-86ed-98fc37f3ffe6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI4OTMzNTQsIm5iZiI6MTcxMjg5MzA1NCwicGF0aCI6Ii8xMzA1Mzg2NzMvMzIxODQ2ODYyLWFmMjI3YjBlLTk4ZTMtNDY0Ni04NmVkLTk4ZmMzN2YzZmZlNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxMlQwMzM3MzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01Yzk0YTA2M2Y4ZjYxOGY1NzM5NmEzNjBkZWU0NzQwNzJlMTM4MzhlMjNlODkxY2FiZWY1YWM0ZWI5OGE5ZmJkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lfLwhanHoKslRgHgdK7ipa2WbBQZKtXCMye8rR__eXY" />
+![Yimage](https://github.com/byeongseokim/CSharp_Calendar/assets/130538673/0a12edfb-9288-46da-a307-c45de20f8bd5)
+
+<p>4️⃣ N 이다?</p>
+
+![Nimage](https://github.com/byeongseokim/CSharp_Calendar/assets/130538673/af227b0e-98e3-4646-86ed-98fc37f3ffe6)
 
 프로그램 종료하게 만듬
 
