@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
+using Spectre.Console;
 
 namespace @foreach
 {
@@ -12,16 +13,21 @@ namespace @foreach
     {
         static void Main(string[] args)
         {
-            Mainmenu();
+            Console.OutputEncoding = Encoding.UTF8;
+
+            AnsiConsole.Write(new FigletText("2024 Calendar")
+                .LeftJustified()
+                .Color(Color.White));
+            Mainmenu();            
             Calendar();
         }
         private static void EndOrRes()
         {
             try
-            {
+            {                
                 Console.WriteLine("다른 달(월)을 보시겠습니까? Y or N");
-                string o = Console.ReadLine();
                 Console.Write('>');
+                string o = Console.ReadLine();                
                 if (o == "y" || o == "Y")
                 {
                     Mainmenu();
@@ -44,7 +50,11 @@ namespace @foreach
         }
         private static void Mainmenu()
         {
-            Console.WriteLine("2024년 달력입니다. 원하는 달을 입력하시면 달력이 출력됩니다.");
+            Console.WriteLine();
+            Console.WriteLine($"╔═══════════════════════════════════════════════════╗");
+            Console.WriteLine("║ 원하는 달을 입력하시면 달력이 출력됩니다.         ║");
+            Console.WriteLine("║ 오늘은 " + DateTime.Now.ToString("M월 d일 입니다.                           ║"));
+            Console.WriteLine($"╚═══════════════════════════════════════════════════╝");
             Console.Write('>');
         }
         private static void Calendar()
@@ -128,9 +138,10 @@ namespace @foreach
         }
 
         private static void Calendar01()
-        {
+        {            
+            //Console.WriteLine($"╔══════════════════════╗");
             Console.WriteLine("2024년 1월");
-            string[] week = { "일 ", "월 ", "화 ", "수 ", "목 ", "금 ", "토" };
+            string[] week = { "일 ", "월 ", "화 ", "수 ", "목 ", "금 ", "토 "};
             
             foreach (string i in week)
             {
@@ -139,7 +150,7 @@ namespace @foreach
                     // 콘솔에서 일요일 부분을 빨간색으로 바꿔줌
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
-                if (i == "토")
+                if (i == "토 ")
                 {
                     // 파란색으로
                     Console.ForegroundColor = ConsoleColor.Blue;
